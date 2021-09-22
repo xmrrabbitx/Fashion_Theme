@@ -1,0 +1,177 @@
+/* Section 2  */
+#sec-2-absolute{
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+
+}
+#sec-2{
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+}
+#block-left-about{
+    float: left;
+    width: 50%;
+
+    height: auto;
+}
+#block-right-about{
+    float: left;
+    width: 50%;
+
+    height: auto;
+}
+
+
+#pic_2_sec_2{
+    width: 100%;
+    height: 100%;
+
+}
+
+#sec-2-text{
+    font-size: 22px;
+    font-family: spectral;
+}
+#read-textsec-2{
+    font-size: 23px;
+    font-family: spectral;
+}
+#read-more-arrow-sec-2-icon{
+    font-weight: bold;
+}
+
+
+/* Menu Section 1 */
+.menu-sec-2{
+    width: 100%;
+    float: left;
+
+}
+.menu-main-stories-sec-2{
+    text-align: right;
+
+}
+.menu-main-stories-2{
+    transform: scale(1.2);
+}
+.line-stories-2{
+    margin-top: 23px;
+    width: 20%;
+    height:2px;
+    background-color: black;
+    color: black;
+    border-style: inset;
+}
+.circle-stories-2{
+    width: 12px;
+    height: 12px;
+    border-radius: 70px;
+    background-color: #000000;
+    margin-top: 19px;
+}
+#stories_text_2{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+.stories_text_2{
+    font-size: 24px;
+    font-family: spectral;
+    padding-top: 4px;
+}
+
+
+.line_text_2{
+    position: absolute;
+    top:500px;
+}
+.menu-main-about-sec-2{
+
+    text-align: right;
+}
+.menu-main-about-2{
+    transform: scale(1.2);
+}
+.line-about-2{
+    margin-top: 23px;
+    width: 20%;
+    height:2px;
+    background-color: black;
+    color: black;
+    border-style: inset;
+}
+.circle-about-2{
+    width: 12px;
+    height: 12px;
+    border-radius: 70px;
+    background-color: #000000;
+    margin-top: 17px;
+}
+#about_text_2{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+.about_text_2{
+    font-size: 24px;
+    font-family: spectral;
+    padding-top: 4px;
+}
+.menu-main-contact-sec-2{
+
+    text-align: right;
+}
+.menu-main-contact-2{
+    transform: scale(1.2);
+}
+.line-contact-2{
+    margin-top: 23px;
+    width: 20%;
+    height:2px;
+    background-color: black;
+    color: black;
+    border-style: inset;
+}
+.circle-contact-2{
+    width: 12px;
+    height: 12px;
+    border-radius: 70px;
+    background-color: #000000;
+    margin-top: 17px;
+}
+#contact_text_2{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+.contact_text_2{
+    font-size: 24px;
+    font-family: spectral;
+    padding-top: 4px;
+}
+
+#sec-1-text-2{
+    font-size: 22px;
+    font-family: spectral;
+}
+#read-textsec-2{
+    font-size: 23px;
+    font-family: spectral;
+}
+#read-more-arrow-sec-2-icon{
+    font-weight: bold;
+}
+
+
+#arrow-down-sec-2{
+    text-align: right;
+    
+}
+#arrow-down-sec-2-link{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+#arrow-down-sec-2-icon{
+    margin-right: 20px;
+    margin-top: 8px;
+}

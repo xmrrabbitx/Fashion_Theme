@@ -1,0 +1,70 @@
+
+#footer{
+ font-family: spectral;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    background: #413F3F;
+
+}
+
+#info-icon{
+    width: 2%;
+    float: left;
+    color:#FF7C7C;
+    
+}
+#info-text{
+    float: left;
+    width: 3%;
+    padding-left: 20px;
+    margin-top: 1px;
+    color:#FF7C7C;
+    font-size: 19px;
+}
+
+
+#telegram-icon{
+    width: 2%;
+    float: left;
+    color:#FF7C7C;
+    
+}
+#telegram-text{
+    float: left;
+    width: 3%;
+    padding-left: 20px;
+    margin-top: 1px;
+    color:#FF7C7C;
+    font-size: 19px;
+}
+
+
+
+
+#telephone-icon{
+    width: 2%;
+    float: left;
+    color:#FF7C7C;
+    
+}
+#telephone-text{
+    float: left;
+    width: 3%;
+    padding-left: 20px;
+    margin-top: 1px;
+    color:#FF7C7C;
+    font-size: 19px;
+}
+
+
+
+#footer-caption{
+    padding-top: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+}

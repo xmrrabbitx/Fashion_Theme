@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xmrrabbit</title>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <! load Bootstrap -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+
+
+    <! load jquery -->
+    <script type="text/javascript" src="/jquery/jquery.min.js"></script>
+
+
+
+    <! load Css -->
+    <link rel="stylesheet" href="/css/sec-1.css">
+    <link rel="stylesheet" href="/css/sec-2.css">
+    <link rel="stylesheet" href="/css/sec-3.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    console.log($(hash).offset().top);
+
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (1800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1800, function(){
+                        console.log("done");
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+
+<style>
+
+
+    #section1 {
+        height: 3600px;
+        background-color: pink;
+    }
+
+    #section2 {
+        height: 600px;
+        background-color: yellow;
+    }
+
+
+
+
+    @font-face {
+
+        font-family: italiano;
+        src: url(/fonts/Italianno-Regular.ttf);
+
+
+    }
+    @font-face {
+
+        font-family: spectral;
+        src: url(/fonts/Spectral-Regular.ttf);
+
+
+    }
+#body{
+    width: 100%;
+
+}
+
+    /* Header Section  */
+    #header{
+       
+        width: 100%;
+        position: fixed;
+        background: rgb(252, 243, 204);
+        height: 70px;
+        top: 0;
+        z-index: 6;
+    }
+    #menu-header-contact{
+        font-size: 18px;
+        font-family: spectral;
+        float: left;
+        width: 10%;
+        margin-left: 35%;
+
+
+    }
+    #menu-header-contact-text{
+        padding-top: 10%;
+    }
+    #menu-header-contact-link{
+        text-decoration: none;
+        color: #000000;
+        margin-top: 100px;
+    }
+    #menu-header-stories{
+
+        font-size: 18px;
+        font-family: spectral;
+        float: left;
+        width: 10%;
+
+    }
+    #menu-header-stories-text{
+        padding-top: 10%;
+    }
+    #menu-header-stories-link{
+        text-decoration: none;
+        color: #000000;
+
+    }
+    #menu-header-about{
+        font-size: 18px;
+        font-family: spectral;
+        float: left;
+        width: 10%;
+
+    }
+    #menu-header-about-text{
+        padding-top: 10%;
+    }
+    #menu-header-about-link{
+        color: #000000;
+        text-decoration: none;
+    }
+
+
+
+    /* media Queries */
+
+    @media screen and (min-width: 1200px) and (max-width: 1400px) {
+
+        #sec-1-text{
+            font-size: 14px;
+        }
+        #sec-2-text{
+            font-size: 14px;
+        }
+        #title-text-left{
+            font-size: 100px;
+        }
+        #title-text-right{
+            font-size: 100px;
+        }
+
+        #stories_text{
+            padding-top: 10px;
+            font-size:20px ;
+        }
+        #about_text{
+            padding-top: 10px;
+            font-size:20px ;
+        }
+        #contact_text{
+            padding-top: 10px;
+            font-size: 20px;
+        }
+        #stories_text_2{
+            padding-top: 10px;
+            font-size:20px ;
+        }
+        #about_text_2{
+            padding-top: 10px;
+            font-size:20px ;
+        }
+        #contact_text_2{
+            padding-top: 10px;
+            font-size: 20px;
+        }
+        #stories_text_3{
+            padding-top: 10px;
+            font-size:20px ;
+        }
+        #about_text_3{
+            padding-top: 10px;
+            font-size:20px ;
+        }
+        #contact_text_3{
+            padding-top: 10px;
+            font-size: 20px;
+        }
+
+
+      
+
+    }
+
+    @media screen and (min-width: 998px) and (max-width: 1200px) {
+
+        #title-text-left{
+            font-size: 100px;
+        }
+        #title-text-right{
+            font-size: 100px
+        }
+
+      
+
+        #block-left{width: 100%}
+        #block-right{width: 100%}
+
+        .menu-sec{display: none;}
+        .menu-sec-2{display: none;}
+        .menu-sec-3{display: none;}
+
+        #block-left-about{
+            width:100%;
+        }
+        #block-right-about{
+            width:100%;
+        }
+
+        #block-left-contact{
+            width:100%;
+        }
+        #block-right-contact{
+            width:100%;
+        }
+
+        #info-text{
+            margin-left: 20px;
+        }
+
+        #telegram-text{
+            margin-left: 20px;
+        }
+        #telephone-text{
+            margin-left: 20px;
+        }
+
+
+
+    }
+    @media screen and (min-width: 748px) and (max-width: 998px) {
+        #menu-header-about{
+            width: 15%;
+            padding-top: 10px;
+        }
+        #menu-header-stories{
+            width: 15%;
+            padding-top: 10px;
+        }
+        #menu-header-contact{
+            width: 15%;
+            margin-left: 27%;
+            padding-top: 10px;
+        }
+
+        #title-text-left{
+            font-size: 80px;
+        }
+        #title-text-right{
+            font-size: 80px
+        }
+
+        .menu-sec{display: none;}
+        .menu-sec-2{display: none;}
+        .menu-sec-3{display: none;}
+
+        #block-left{width: 100%}
+        #block-right{width: 100%}
+
+
+        #block-left-about{
+            width:100%;
+        }
+        #block-right-about{
+            width:100%;
+        }
+
+        #block-left-contact{
+            width:100%;
+        }
+        #block-right-contact{
+            width:100%;
+        }
+
+        #info-text{
+            margin-left: 20px;
+        }
+
+        #telegram-text{
+            margin-left: 20px;
+        }
+        #telephone-text{
+            margin-left: 20px;
+        }
+
+    }
+
+    @media screen and (min-width: 574px) and (max-width: 748px) {
+
+        #menu-header-about{
+            width: 15%;
+            padding-top: 12px;
+        
+        }
+        #menu-header-stories{
+            width: 15%;
+            padding-top: 12px;
+        
+        }
+        #menu-header-contact{
+            width: 17%;
+            margin-left: 25%;
+            padding-top: 12px;
+        
+        }
+
+        #title-text-right{font-size: 50px}
+        #title-text-left{font-size: 50px}
+
+
+        #block-left{width: 100%}
+        #block-right{width: 100%}
+
+        .menu-sec{display: none;}
+        .menu-sec-2{display: none;}
+        .menu-sec-3{display: none;}
+
+
+        #block-left-about{
+            width:100%;
+        }
+        #block-right-about{
+            width:100%;
+        }
+        #block-left-contact{
+            width:100%;
+        }
+        #block-right-contact{
+            width:100%;
+        }
+
+        #info-text{
+            margin-left: 20px;
+        }
+
+        #telegram-text{
+            margin-left: 20px;
+        }
+        #telephone-text{
+            margin-left: 20px;
+        }
+
+    }
+
+    @media screen and (max-width: 574px) {
+
+        #menu-header-about{
+            width: 25%;
+            font-size: 14px;
+            padding-top: 18px;
+        }
+        #menu-header-stories{
+            width: 25%;
+            font-size: 14px;
+            padding-top: 18px;
+        }
+        #menu-header-contact{
+            width: 25%;
+            font-size: 14px;
+            margin-left: 10%;
+            padding-top: 18px;
+        }
+
+
+        #title-text-right{font-size: 50px}
+        #title-text-left{font-size: 50px}
+
+
+
+
+        #arrow-slider-left_icon{
+          width: 30px;
+        }
+
+        #block-left{width: 100%}
+        #block-right{width: 100%}
+
+        .menu-sec{display: none;}
+        .menu-sec-2{display: none;}
+        .menu-sec-3{display: none;}
+
+
+        #sec-1-text{font-size: 16px;}
+        #read-more-arrow-sec-1-icon{width:28px;}
+        #arrow-down-sec-1-icon{width: 28px;}
+
+        #read-textsec-1 {
+
+            font-size: 17px;
+
+        }
+        #block-left-about{
+            width:100%;
+        }
+        #block-right-about{
+            width:100%;
+        }
+        #block-left-contact{
+            width:100%;
+        }
+        #block-right-contact{
+            width:100%;
+        }
+
+        #pic_2_sec_2{
+            width: 100%;
+            height: 100%;
+
+        }
+        #sec-2-text{
+            font-size: 16px;
+        }
+        #read-textsec-2 {
+
+            font-size: 17px;
+
+        }
+
+        #read-more-arrow-sec-2-icon{width:28px;}
+        #arrow-down-sec-2-icon{width: 28px;}
+
+
+        #UserName{
+            font-size: 14px;
+            padding-top: 10px;
+        }
+        #FamilyName{
+            font-size: 14px;
+            padding-top: 10px;
+        }
+        #Message{
+            font-size: 14px;
+            padding-top: 5px;
+        }
+        #info-text{
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        #telegram-text{
+            margin-left: 20px;
+            font-size: 14px;
+        }
+        #telephone-text{
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        #footer-caption{
+            padding-top: 35px;
+            font-size: 14px;
+        }
+        #submit_butt{
+            font-size: 14px;
+            padding:10px;
+        }
+    }
+
+</style>
+
+</head>
+<body id="body_Tag">
+
+
+<div  id="body">
+
+
+    <div  id="header">
+
+
+            <div id="menu-header-contact" class="text-center">
+                <p id="menu-header-contact-text">
+                    <a href="#"  id="menu-header-contact-link">
+                        Contact Us
+                    </a>
+                </p>
+
+
+            </div>
+            <div id="menu-header-stories" class ="  text-center">
+                <p id="menu-header-stories-text">
+                <a href="#" id="menu-header-stories-link">
+               Stories
+                </a>
+                </p>
+            </div>
+            <div id="menu-header-about" class="text-center">
+                <p id="menu-header-about-text">
+                <a href="#" id="menu-header-about-link">
+               About Us
+                </a>
+                </p>
+            </div>
+
+
+
+    </div>
+
+
+    <div id="sec-1">
+
+    <div id="sec-1-absolute">
+
+
+<div id="arrow-slider-left-sec">
+    <div id="arrow-slider-left">
+
+        <svg id="arrow-slider-left_icon" class="bi" width="42" height="42" fill="currentColor">
+            <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#arrow-left"/>
+        </svg>
+
+    </div>
+
+
+    </div>
+
+
+        <div id="title-text">
+            <div id="title-text-left">
+                Fashion
+            </div>
+            <div id="title-text-right">
+               Design
+            </div>
+        </div>
+
+
+        <div  class="menu-sec">
+
+
+            <div class="container-fluid" style="width: 100%;">
+      
+
+                   <div class="row mt-3 ">
+
+
+    <span id="menu-main-stories-sec"   class="ms-4 col-xl-6 col-lg-1 col-md-1 col-sm-1 col-1  p-0 menu-main-stories-sec">
+     <svg  id="menu-main-stories" class="bi menu-main-stories" width="48" height="48" fill="currentColor">
+                <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#hexagon-half"/>
+            </svg>
+</span>
+
+
+                       <span class="col-3 p-0">
+<div class="row ms-0">
+    <hr class="line-stories">
+    <div class="col-1 p-0">
+         <div class="circle-stories" ></div>
+    </div>
+    <div id="stories_text" class="col-xl-5 col-lg-5 col-md-8 col-sm-5 col-4 stories_text">
+        Stories
+    </div>
+
+</div>
+
+</span>
+
+
+
+                   </div>
+
+
+                   <div class="row mt-4">
+<span id="menu-main-about-sec"  class="ms-4  col-xl-6 col-lg-1 col-md-1 col-sm-1 col-1 p-0 menu-main-about-sec">
+     <svg  id="menu-main-about" class="bi menu-main-about" width="48" height="48" fill="currentColor">
+                <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#hexagon-fill"/>
+            </svg>
+</span>
+                       <span class="col-3 p-0">
+            <div class="row ms-0">
+   <hr class="line-about">
+                <div class="col-1 p-0">
+         <div class="circle-about" ></div>
+    </div>
+                         <a  href="#block-left-about"  id="about_text" class="col-xl-5 col-lg-5 col-md-8 col-sm-5 col-4 about_text">
+       About Us
+    </a>
+            </div>
+</span>
+
+                   </div>
+
+
+                   <div class="row mt-4">
+<span id="menu-main-contact-sec"  class="ms-4  col-xl-6 col-lg-1 col-md-1 col-sm-1 col-1 p-0 menu-main-contact-sec">
+     <svg  id="menu-main-contact" class="bi menu-main-contact" width="48" height="48" fill="currentColor">
+                <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#hexagon-fill"/>
+            </svg>
+</span>
+                       <span class="col-3 p-0">
+            <div class="row ms-0">
+   <hr class="line-contact">
+                <div class="col-1 p-0">
+         <div class="circle-contact" ></div>
+    </div>
+                         <a href="#block-left-contact" id="contact_text" class="col-xl-5 col-lg-5 col-md-8 col-sm-5 col-4 contact_text">
+
+       Contact Us
+
+                         </a>
+            </div>
+</span>
+
+                   </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+<div id="block-left">
+<div id="slider">
+    <img id="pic_1" class="pic_" src="pics/1_slide.jpg">
+
+</div>
+
+</div>
+
+
+    <div id="block-right">
+
+
+        <p id="sec-1-text" class="col-xl-12 col-lg-8 col-md-12 col-sm-12 col-12 ps-3">
+
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, ...
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, ...
+
+
+        </p>
+
+        <div id="read-more-container-sec-1" class="container-fluid ">
+            <div class="row p-0 ">
+                <p id="read-textsec-1"  class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8  ps-3 pt-2 ">
+                    Read More
+                    <svg id="read-more-arrow-sec-1-icon" class="bi" width="42" height="42" fill="currentColor">
+                        <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#arrow-right"/>
+                    </svg>
+                </p>
+                <p id="arrow-down-sec-1" class="col-4">
+                    <a id="arrow-down-sec-1-link" href="#block-left-about">
+                    <svg id="arrow-down-sec-1-icon" class="bi" width="42" height="42" fill="currentColor">
+                        <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#arrow-down"/>
+                    </svg>
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+    <div  id="sec-2">
+
+        <div id="sec-2-absolute">
+
+
+
+        <div id="menu-sec-2" class="menu-sec-2">
+
+
+            <div class="container-fluid" style="width: 100%;">
+
+                <div class="row mt-3 ">
+
+    <span id="menu-main-stories-sec-2"   class="ms-4 col-xl-6 col-lg-1 col-md-1 col-sm-1 col-1  p-0 menu-main-stories-sec">
+     <svg  id="menu-main-stories-2" class="bi menu-main-stories-2" width="48" height="48" fill="currentColor">
+                <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#hexagon-fill"/>
+            </svg>
+</span>
+
+
+                    <span class="col-3 p-0">
+<div class="row ms-0">
+    <hr class="line-stories-2">
+    <div class="col-1 p-0">
+         <div class="circle-stories-2" ></div>
+    </div>
+    <a href="#block-left" id="stories_text_2" class="col-xl-5 col-lg-5 col-md-8 col-sm-5 col-4 stories_text_2">
+       
+        Stories
+
+        </a>
+
+    </div>
+
+                </div>
+
+
+   
+
+                <div class="row mt-4">
+<span id="menu-main-about-sec-2"  class="ms-4  col-xl-6 col-lg-1 col-md-1 col-sm-1 col-1 p-0 menu-main-about-sec">
+     <svg  id="menu-main-about" class="bi menu-main-about-2" width="48" height="48" fill="currentColor">
+                <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#hexagon-half"/>
+            </svg>
+</span>
+                    <span class="col-3 p-0">
+            <div class="row ms-0">
+   <hr class="line-about-2">
+                <div class="col-1 p-0">
+         <div class="circle-about-2" ></div>
+    </div>
+          <div  id="about_text_2" class="col-xl-5 col-lg-5 col-md-8 col-sm-5 col-4 about_text_2">
+       About Us
+          </div>
+            </div>
+</span>
+
+                </div>
+
+                <div class="row mt-4">
+<span id="menu-main-contact-sec-2"  class="ms-4  col-xl-6 col-lg-1 col-md-1 col-sm-1 col-1 p-0 menu-main-contact-sec">
+     <svg  id="menu-main-contact-2" class="bi menu-main-contact-2" width="48" height="48" fill="currentColor">
+                <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#hexagon-fill"/>
+            </svg>
+</span>
+                    <span class="col-3 p-0">
+            <div class="row ms-0">
+   <hr class="line-contact-2">
+                <div class="col-1 p-0">
+         <div class="circle-contact-2" ></div>
+    </div>
+                         <a href="#block-left-contact" id="contact_text_2" class="col-xl-5 col-lg-5 col-md-8 col-sm-5 col-4 contact_text_2">
+
+       Contact Us
+
+                         </a>
+            </div>
+</span>
+
+                </div>
+
+
+</div>
+            </div>
+
+
+        </div>
+
+
+       
+
+
+
+        <div id="block-left-about">
+
+                <img id="pic_2_sec_2" src="pics/about_us.png">
+
+
+        </div>
+
+
+        <div id="block-right-about">
+
+
+            <p id="sec-2-text" class="col-xl-12 col-lg-8 col-md-12 col-sm-12 col-12 ps-3">
+
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, ...
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, ...
+
+
+            </p>
+
+            <div id="read-more-container-sec-2" class="container-fluid">
+                <div class="row p-0">
+                    <p id="read-textsec-2" class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8  ps-3 pt-2 ">
+                        Read More
+
+                        <svg id="read-more-arrow-sec-2-icon" class="bi" width="42" height="42" fill="currentColor">
+                            <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#arrow-right"/>
+                        </svg>
+
+
+                    </p>
+                    <p id="arrow-down-sec-2" class="col-4">
+                        <a id="arrow-down-sec-2-link" href="#block-left-contact">
+                        <svg id="arrow-down-sec-2-icon" class="bi" width="42" height="42" fill="currentColor">
+                            <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#arrow-down"/>
+                        </svg>
+                        </a>
+                    </p>
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <div  id="sec-3">
+
+        <div id="sec-3-absolute">
+
+
+
+        <div id="menu-sec-3" class="menu-sec-3">
+
+
+            <div class="container-fluid" style="width: 100%;">
+
+                <div class="row mt-3   ">
+
+    <span id="menu-main-stories-sec-3"   class="ms-4 col-xl-6 col-lg-1 col-md-1 col-sm-1 col-1  p-0 menu-main-stories-sec">
+     <svg  id="menu-main-stories-3" class="bi menu-main-stories-3" width="48" height="48" fill="currentColor">
+                <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#hexagon-fill"/>
+            </svg>
+</span>
+
+
+                    <span class="col-3 p-0">
+<div class="row ms-0">
+    <hr class="line-stories-3">
+    <div class="col-1 p-0">
+         <div class="circle-stories-3" ></div>
+    </div>
+    <a href="#block-left" id="stories_text_3" class="col-xl-5 col-lg-5 col-md-8 col-sm-5 col-4 stories_text_3">
+       
+        Stories
+
+        </a>
+
+    </div>
+
+                </div>
+
+
+   
+
+                <div class="row mt-4">
+<span id="menu-main-about-sec-3"  class="ms-4  col-xl-6 col-lg-1 col-md-1 col-sm-1 col-1 p-0 menu-main-about-sec">
+     <svg  id="menu-main-about" class="bi menu-main-about-2" width="48" height="48" fill="currentColor">
+                <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#hexagon-fill"/>
+            </svg>
+</span>
+                    <span class="col-3 p-0">
+            <div class="row ms-0">
+   <hr class="line-about-3">
+                <div class="col-1 p-0">
+         <div class="circle-about-3" ></div>
+    </div>
+          <a href="#block-left-about"  id="about_text_3" class="col-xl-5 col-lg-5 col-md-8 col-sm-5 col-4 about_text_3">
+       About Us
+    </a>
+            </div>
+</span>
+
+                </div> 
+
+                <div class="row mt-4">
+<span id="menu-main-contact-sec-2"  class="ms-4  col-xl-6 col-lg-1 col-md-1 col-sm-1 col-1 p-0 menu-main-contact-sec">
+     <svg  id="menu-main-contact-2" class="bi menu-main-contact-2" width="48" height="48" fill="currentColor">
+                <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#hexagon-half"/>
+            </svg>
+</span>
+                    <span class="col-3 p-0">
+            <div class="row ms-0">
+   <hr class="line-contact-3">
+                <div class="col-1 p-0">
+         <div class="circle-contact-3" ></div>
+    </div>
+                         <div  id="contact_text_3" class="col-xl-5 col-lg-5 col-md-8 col-sm-5 col-4 contact_text_3">
+
+       Contact Us
+
+                         </div>
+            </div>
+</span>
+
+                </div>
+
+
+</div>
+            </div>
+
+
+        </div>
+
+
+       
+
+
+
+        <div id="block-left-contact">
+
+                <img id="pic_3_sec_3" src="pics/contact_us.png">
+
+
+        </div>
+
+
+        <div id="block-right-contact">
+
+
+            <p id="sec-3-text" class="col-xl-12 col-lg-8 col-md-8 col-sm-8 col-11 ps-3">
+
+                <form>
+                    <div class="container">
+   
+                    <div id="form-row" class="row">
+                        <div class="row mt-xl-3 mt-lg-3">
+                        <div id="UserName" class="col-xl-2 col-3">
+                            Name:
+                        </div>
+                
+                    <div id="username_sec" class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8">
+                        <input  id="username_input" type="text" >
+                    </div>
+                   </div>
+
+                   <div class="row mt-xl-4 mt-lg-4  mt-md-4 mt-sm-4 mt-4">
+                    <div id="FamilyName" class="col-xl-2 col-3">
+                        Family:
+                    </div>
+                    <div id="family_sec" class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8">
+                    <input id="family_input" type="text">
+                    </div>
+                    </div>
+
+
+                    <div class="row mt-xl-4 mt-lg-4  mt-md-4 mt-sm-4 mt-4">
+                    <div id="Message" class="col-xl-2 col-3">
+                        Message:
+                    </div>
+                    <div id="message_sec" class="col-xl-5 col-lg-5 col-md-5 col-sm-8 col-8">
+                    <textarea id="message_input" ></textarea>
+                    </div> 
+                    </div>
+                    
+                    
+                    <div class="row mt-xl-3 mt-lg-4 mt-md-4 mt-sm-4 mt-4">
+                    <div id="submit_sec" class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4 offset-xl-2 offset-lg-3 offset-md-3 offset-sm-3 offset-3">
+                    <button id="submit_butt">
+                            Send
+                        </button>
+                    </div>
+                    </div>
+
+                    
+                    </div>
+                    </div>
+            </form>
+
+
+            </p>
+
+            
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+<footer id="footer" >
+    <div id="footer-sec" class="col-xl-12">
+        
+        <div id="info-sec" class="col-xl-12">
+            <div class="row m-0 mt-5  ms-xl-3 ms-lg-3 ms-md-3 ms-sm-3 ms-3">
+                    <div id="info-icon">                
+                    <svg class="bi menu-main-stories" width="28" height="28" fill="currentColor">
+                        <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#info-circle-fill"/>
+                    </svg>
+                </div>
+
+                <div id="info-text">
+                    <span>
+                        Info
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="telegram-sec" class="col-xl-12">
+            <div class="row m-0 mt-5 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-3 ms-3">
+                    <div id="telegram-icon">                
+                    <svg class="bi menu-main-stories" width="28" height="28" fill="currentColor">
+                        <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#telegram"/>
+                    </svg>
+                </div>
+
+                <div id="telegram-text">
+                    <span>
+                        Telegram
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="telephone-sec" class="col-xl-12">
+            <div class="row m-0 mt-5 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-3 ms-3">
+                    <div id="telephone-icon">                
+                    <svg class="bi menu-main-stories" width="28" height="28" fill="currentColor">
+                        <use id="" class="" xlink:href="bootstrap-icons/bootstrap-icons.svg#telephone"/>
+                    </svg>
+                </div>
+
+                <div id="telephone-text">
+                    <span>
+                        Telephone
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+
+            <div id="footer-caption">
+                @XmrrabbitX
+            </div>
+    </div>
+</footer>
+
+
+
+
+</div>
+
+
+
+
+<script>
+
+
+   $(window).load(function () {
+
+
+       class Slider {
+
+           constructor() {
+
+               this.PicLenght = ["1_slide", "2_slide","3_slide"];
+               this.clssnames = document.getElementsByClassName("pic_");
+               this.PicId = parseInt((this.clssnames[0].id).split("_")[1]);
+               
+
+           }
+
+           Style() {
+               
+               let picId = (this.clssnames[0].id);
+               let Pic = document.getElementById(picId);
+
+
+
+
+               if (screen.width < 1200 ) {
+
+                   Pic.style.height = (Pic.style.width) + "px";
+
+
+
+               } else {
+
+
+                   Pic.style.height =(Pic.style.width) + "px";
+               }
+
+           }
+
+          
+           ChangeSlide(ArrowLeftSlider) {
+
+               
+             
+
+               ArrowLeftSlider.style.pointerEvents = "none";
+
+
+               let Slider = document.getElementById("slider");
+
+
+               var lastElm = "#pic_" + this.PicId;
+      
+
+               if (this.PicId >= this.PicLenght.length) {
+
+                   this.PicId = 1;
+                   lastElm = "#pic_" + this.PicLenght.length;
+
+               } else {
+
+                   this.PicId += 1;
+                   lastElm = "#pic_" + (this.PicId - 1);
+
+               }
+
+
+               let pic2 = document.createElement("img");
+               pic2.setAttribute("src", "pics/" + this.PicId + "_slide.jpg");
+               pic2.setAttribute("id", "pic_" + this.PicId);
+               pic2.style.position = "absolute";
+               pic2.style.width = "100%";
+
+               pic2.style.zIndex = this.PicId.toString();
+          
+               if (screen.width < 1200 ) {
+
+                   pic2.style.height = (pic2.style.width) + "px";
+
+
+               } else{
+
+                pic2.style.height = (pic2.style.width) + "px";
+
+               }
+
+               Slider.appendChild(pic2);
+     
+           
+             
+
+               $(lastElm).css("position", "absolute");
+      
+               if (screen.width < 1200) {
+                   $(lastElm).css("width", "100%");
+               } else {
+                   $(lastElm).css("width", "50%");
+
+               }
+
+               $(lastElm).css("z-index", (this.PicId + 1).toString());
+
+               setTimeout(function () {
+
+                        if(screen.width < 574){
+                   var delay = 4000;
+               }else{
+                var delay =  2500;
+               }
+                
+                   $(lastElm).animate({"right": "2000"}, delay, function () {
+                       $(lastElm).remove();
+                       ArrowLeftSlider.style.pointerEvents = "auto";
+
+                      
+                   });
+
+               }, 400);
+
+               pic2.style.position = "static";
+
+
+           }
+
+       }
+
+       let slider = new Slider();
+       slider.Style();
+
+
+       let ArrowLeftSlider = document.getElementById("arrow-slider-left");
+
+       ArrowLeftSlider.addEventListener("click", function (e) {
+
+
+           slider.ChangeSlide(ArrowLeftSlider);
+
+
+       });
+
+
+       class StyleSec1 {
+
+           constructor() {
+
+               this.text = document.getElementById("sec-1-text");
+               this.clssnames = document.getElementsByClassName("pic_");
+               this.PicId = this.clssnames[0].id;
+               this.BlockLeft = document.getElementById("block-left");
+               this.Slider = document.getElementById("slider");
+
+
+
+           }
+
+           Text() {
+
+      
+                this.BlockLeft.style.height = $("#slider").height() + "px";
+
+
+               if (screen.width > 1200) {
+
+
+                   this.text.style.marginTop = (document.getElementById(this.PicId).clientHeight - (document.getElementById("sec-1-text").clientHeight + (document.getElementById("read-more-container-sec-1").clientHeight + (document.getElementById("read-more-container-sec-1").clientHeight / 2)))) + "px";
+
+               } else {
+
+                   this.text.style.marginTop = "30px";
+
+               }
+
+
+           }
+
+
+       }
+
+
+       let StyleSecFirst = new StyleSec1();
+       StyleSecFirst.Text();
+
+
+
+
+       class StyleSec2 {
+
+constructor() {
+
+    this.text = document.getElementById("sec-2-text");
+
+    this.PicId = document.getElementById("pic_2_sec_2");
+
+    this.MenuSec = document.getElementById("menu-sec-2");
+
+}
+
+Text() {
+
+
+    this.MenuSec.style.marginTop = (this.PicId.clientHeight / 3 ) + "px";
+
+    if (screen.width > 1200) {
+
+        this.text.style.marginTop = (this.PicId.clientHeight
+            - (document.getElementById("sec-2-text").clientHeight +
+                (document.getElementById("read-more-container-sec-2").clientHeight
+                    + (document.getElementById("read-more-container-sec-2").clientHeight / 2)))) + "px";
+
+    } else {
+
+
+        this.text.style.marginTop = "30px";
+
+    }
+
+
+}
+
+
+}
+
+
+let StyleSecSecond = new StyleSec2();
+StyleSecSecond.Text();
+
+
+
+       class StyleSec3 {
+
+           constructor() {
+
+               this.text = document.getElementById("sec-3-text");
+
+               this.PicId = document.getElementById("pic_3_sec_3");
+
+               this.MenuSec = document.getElementById("menu-sec-3");
+
+               this.MessageInput = document.getElementById("message_input");
+
+               this.FormRow = document.getElementById("form-row");
+
+           }
+         
+           Text() {
+
+
+               this.MenuSec.style.marginTop = (this.PicId.clientHeight / 3 ) + "px";
+            
+                   
+                if (screen.width > 1200) {
+
+                    this.MessageInput.style.paddingBottom = (this.PicId.clientHeight / 3) - (this.FormRow.clientHeight) + "px";
+                   
+                   this.text.style.marginTop = ((this.PicId.clientHeight / 3) + (this.PicId.clientHeight / 4))+ "px";
+
+               } else {
+
+                this.MessageInput.style.paddingBottom = "80px";
+                   
+                   this.text.style.marginTop = "30px";
+
+               }
+
+
+           }
+
+
+       }
+
+
+       let StyleSecThird = new StyleSec3();
+       StyleSecThird.Text();
+
+
+
+       window.addEventListener("resize", function () {
+
+
+           StyleSecFirst.Text();
+           StyleSecSecond.Text();
+           StyleSecThird.Text();
+
+       });
+
+
+   });
+
+</script>
+
+
+
+</body>
+</html>
